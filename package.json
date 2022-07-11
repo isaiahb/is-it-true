@@ -1,0 +1,23 @@
+{
+  "name": "is-it-true",
+  "version": "1.0.0",
+  "description": "An API to tell if a variable is true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaiahb/is-it-true.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaiahb/is-it-true/issues"
+  },
+  "homepage": "https://github.com/isaiahb/is-it-true#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
