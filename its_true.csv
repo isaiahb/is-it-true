@@ -1,0 +1,9 @@
+statement,truth
+true,1
+false,0
+it's true,1
+it's not true,0
+correct,1
+incorrect,0
+this algorithm is perfect,1
+this algorithm is bad,0
