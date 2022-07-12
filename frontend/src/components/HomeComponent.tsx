@@ -1,5 +1,5 @@
 import { Box, Typography, Button, Grid } from "@mui/material";
-import image from "../assets/home-image.png";
+import image from "/src/assets/home-image.png";
 
 export default function HomeComponent() {
   return (

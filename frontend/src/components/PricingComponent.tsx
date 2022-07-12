@@ -46,7 +46,7 @@ export default function PricingComponent() {
             <Pricing
               title="PUBLIC"
               price="Free"
-              includes={["isEven number API route", "Values: True and False"]}
+              includes={["isItTrue value API route", "Values: True and False"]}
               doesNotInclude={[
                 "No advertisements",
                 "AI Machine Learning Boosted",
@@ -67,7 +67,7 @@ export default function PricingComponent() {
               title="PREMIUM"
               price="1.99"
               includes={[
-                "isEven number API route",
+                "isItTrue value API route",
                 "Values: True and False",
                 "No advertisements",
               ]}
@@ -87,7 +87,7 @@ export default function PricingComponent() {
               title="ENTERPRISE"
               price="99.99"
               includes={[
-                "isEven number API route",
+                "isItTrue value API route",
                 "Values: True and False",
                 "No advertisements",
                 "AI Machine Learning Boosted",

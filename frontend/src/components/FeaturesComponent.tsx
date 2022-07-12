@@ -1,6 +1,6 @@
 import { Box, Typography, Grid } from "@mui/material";
-import ItsTrueImage from "../assets/its-true.png";
-import ItsNotTrueImage from "../assets/its-not-true.png";
+import ItsTrueImage from "/src/assets/its-true.png";
+import ItsNotTrueImage from "/src/assets/its-not-true.png";
 
 export default function FeaturesComponent() {
   return (
