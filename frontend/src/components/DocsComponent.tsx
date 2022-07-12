@@ -1,5 +1,6 @@
 import { Box, Typography, Button, Grid } from "@mui/material";
-import { CodeBlock } from '@atlaskit/code';
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { dark, docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 // {
 //   "iseven": true,
@@ -7,10 +8,15 @@ import { CodeBlock } from '@atlaskit/code';
 // }
 
 export default function DocComponent() {
-  const text = `$ curl https://api.isevenapi.xyz/api/iseven/6/` + "\n" +
-  `{` + "\n" +
-  `    isItTrue: "It's true!` + "\n" +
-  `}` + "\n";
+  const text =
+    `$ curl https://api.itstrue.fyi/v2/api/is-it-true/true/` +
+    "\n" +
+    `{` +
+    "\n" +
+    `    isItTrue: "It's true!"` +
+    "\n" +
+    `}` +
+    "\n";
   return (
     <Box width="100%">
       <Box padding="30px">
@@ -36,7 +42,7 @@ export default function DocComponent() {
                   color="#333"
                   paddingLeft="20px"
                 >
-                  API URL: https://api.isItTrue.xyz/api/
+                  API URL: https://api.itstrue.fyi/api/
                 </Typography>
 
                 <Typography
@@ -89,7 +95,7 @@ export default function DocComponent() {
                   paddingLeft="20px"
                   paddingBottom="50px"
                 >
-                  https://api.isItTrue.xyz/api/v2/is-it-true/true/
+                  https://api.itstrue.fyi/api/v2/is-it-true/true/
                 </Typography>
               </Box>
             </Grid>
@@ -98,14 +104,22 @@ export default function DocComponent() {
           {/* Code example */}
           <Grid item xs={12} md={6}>
             <Box width="100%">
-              <Typography fontSize={"0.825rem"} fontWeight={700} color="#333" paddingBottom="20px">
+              <Typography
+                fontSize={"0.825rem"}
+                fontWeight={700}
+                color="#333"
+                paddingBottom="20px"
+              >
                 Example API Response
               </Typography>
-              <CodeBlock
+              {/* <CodeBlock
                 language="text"
                 text={text}
                 showLineNumbers={false}
-              />
+              /> */}
+              <SyntaxHighlighter language="plaintext" style={dark}>
+                {text}
+              </SyntaxHighlighter>
             </Box>
           </Grid>
         </Grid>
