@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 function isItTrue(value) {
   const _value = value.toLowerCase();
@@ -17,6 +17,10 @@ function isItTrue(value) {
 
   return true;
 }
+
+app.get('/', (req, res) => {
+  res.redirect("https://www.itstrue.fyi");
+});
 
 app.get('/v1', (req, res) => {
   res.send("it's true!");
