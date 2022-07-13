@@ -1,0 +1,14 @@
+steps:
+- name: node:14.15.0
+  entrypoint: npm
+  args: ["install"]
+- name: node:14.15.0
+  dir: backend/
+  entrypoint: npm
+  args: ["run", "create-env"]
+  env:
+  - 'MONGO_URL=${_MONGO_URL}'
+- name: "gcr.io/cloud-builders/gcloud"
+  dir: backend/
+  args: ["app", "deploy", "app.yaml"]
+timeout: '1600s'
